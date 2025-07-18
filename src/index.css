@@ -13,7 +13,7 @@
 
 .nean-effect{
 
-  color: rgb(130, 0, 154);
+  color: rgb(229, 83, 255);
   transition:
     filter 0.3s ease,
     color 0.3s ease;
@@ -26,6 +26,16 @@
     0 0 92px #a84eff,   /* deeper purple */
     0 0 102px #e17eff,
     0 0 151px #7a2fff; 
+}
+
+
+.shadow-cards{
+  box-shadow:  0px -1px 4px 4px #ff8ffd;
+  
+}
+.shadow-cards:hover{
+  box-shadow:  0px -7px 5px 4px #ff8ffd; 
+  scale: 102%;
 }
 
 
@@ -58,5 +68,14 @@
 
 .nav_link:hover::after{
   opacity: 1;
-  background: #c98cf7;
+  background: #d9a8ff;
+  text-shadow:
+      0 0 7px #f8abff,
+      0 0 10px #ff8ffd,
+      0 0 20px #ff8afb,
+      0 0 30px #d48bff,   /* lighter purple */
+      0 0 82px #e17eff,   /* main purple */
+      0 0 92px #a84eff,   /* deeper purple */
+      0 0 80px #e17eff,
+      0 0 151px #9b61ff;
  }

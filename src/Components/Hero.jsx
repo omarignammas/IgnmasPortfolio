@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 import { bgPurple, offmenu } from "../Assets";
 import StickyNavbar from "./StickyNavbar";
 import TrueFocus from "./TrueFocus";
+import About from "./About";
 
 
 const Hero = () => {
   return (
-    <div className='w-full min-h-screen relative overflow-x-hidden'>
+    <div className='w-full min-h-screen relative overflow-x-hidden pointer-events-none'>
       
       {/* Hero Section */}
       <motion.div className='w-full h-screen relative overflow-hidden'>
@@ -80,6 +81,10 @@ const Hero = () => {
                     
         </motion.div>
       </motion.div>
+
+      
+
+      <About></About>
       
      
     </div>
