@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { bgPurple, offmenu } from "../Assets";
+import { bgPurple, offmenu, profile } from "../Assets";
 import StickyNavbar from "./StickyNavbar";
 import TrueFocus from "./TrueFocus";
 import About from "./About";
@@ -71,15 +71,8 @@ const Hero = () => {
           
         </motion.div>
 
-        {/* Planet Earth Image */}
-        <motion.div
-          initial={{ opacity: 0, translateX: 60 }}
-          animate={{ opacity: 1, translateX: 10 }}
-          transition={{ duration: 1, delay: 1.4 }} 
-          className='absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-8 lg:pl-[45vw] lg:pr-10 pt-20 sm:pt-24 lg:pt-0 z-20'>
+       
 
-                    
-        </motion.div>
       </motion.div>
 
       
