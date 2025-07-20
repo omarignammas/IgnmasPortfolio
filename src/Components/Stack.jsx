@@ -225,7 +225,6 @@ const techStack = [
               />
             </div>
           </motion.div>
-          <NexusOrbSup/>
         </div>
       </section>
     );

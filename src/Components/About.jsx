@@ -1,89 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { GitexAfrica,SmatrbinCompetition } from "../Assets/index";
-import { useState,useEffect } from "react";
+
 
 const About = () => {
  
-    function FloatingDots() {
-        const [dots, setDots] = useState([]);
-      
-        useEffect(() => {
-          const generateDots = () => {
-            const newDots = [];
-            for (let i = 0; i < 25; i++) {
-              newDots.push({
-                id: i,
-                size: Math.random() * 5 + 2,
-                left: Math.random() * 100,
-                top: Math.random() * 100,
-                delay: Math.random() * 5,
-                duration: Math.random() * 6 + 6,
-                opacity: Math.random() * 0.6 + 0.5,
-              });
-            }
-            setDots(newDots);
-          };
-      
-          generateDots();
-        }, []);
-      
-        return (
-          <div className="absolute inset-0 overflow-hidden">
-            {dots.map((dot) => (
-              <div
-                key={dot.id}
-                className="absolute rounded-full bg-gradient-to-tr from-purple-800 via-purple-600 to-purple-400 cursor-pointer transition-all duration-300 ease-out hover:scale-[2] hover:opacity-100 hover:z-50 hover:brightness-150 hover:saturate-150"
-                style={{
-                  width: `${dot.size}px`,
-                  height: `${dot.size}px`,
-                  left: `${dot.left}%`,
-                  top: `${dot.top}%`,
-                  opacity: dot.opacity,
-                  animation: `floatDot ${dot.duration}s ease-in-out ${dot.delay}s infinite`,
-                  boxShadow: `0px 2px 10px 3px #8B5CF6`,
-                  filter: 'brightness(1) saturate(1)',
-                }}
-                onMouseEnter={(e) => {
-                  e.target.style.animationPlayState = 'paused';
-                  e.target.style.boxShadow = `
-                    0 0 30px rgba(139, 92, 246, 0.8), 
-                    0 0 60px rgba(139, 92, 246, 0.4),
-                    0 0 90px rgba(139, 92, 246, 0.2)
-                  `;
-                  e.target.style.filter = 'brightness(2) saturate(2) drop-shadow(0 0 15px rgba(139, 92, 246, 0.8))';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.animationPlayState = 'running';
-                  e.target.style.boxShadow = `0 2px 8px rgba(139, 92, 246, 0.2)`;
-                  e.target.style.filter = 'brightness(1) saturate(1)';
-                }}
-              />
-            ))}
-      
-            <style jsx>{`
-              @keyframes floatDot {
-                0%, 100% {
-                  transform: translateY(0px) translateX(0px) scale(1);
-                }
-                25% {
-                  transform: translateY(-30px) translateX(25px) scale(1.2);
-                }
-                50% {
-                  transform: translateY(-15px) translateX(-25px) scale(0.8);
-                }
-                75% {
-                  transform: translateY(-40px) translateX(17px) scale(1.1);
-                }
-              }
-            `}</style>
-          </div>
-        );
-      } 
+  
   
 
     return(
-        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 overflow-hidden pointer-events-none'>
+        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 overflow-hidden'>
 
             <div className='relative z-10 max-w-7xl mx-auto h-full flex flex-col'>
                 {/* Main Content - Layout côte à côte */}
@@ -92,10 +18,6 @@ const About = () => {
                         
                         {/* Texte - Côté gauche */}
                         <motion.div
-                            initial={{ opacity: 0, x: -70 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 2 }}
-                            viewport={{ once: true }}
                             className="space-y-8"
                         >
                             {/* Header */}
@@ -134,11 +56,11 @@ const About = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 60 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.4, delay: 0.4 }}
+                            transition={{ duration: 1.5, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="relative w-full"
                         >
-                            <div className="shadow-cards relative w-full bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 overflow-hidden">
+                            <div className="relative w-full bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 overflow-hidden">
                                 {/* purple shadow at top of image */}
                                 <div className="absolute top-0 left-0 right-0 h-5 bg-gradient-to-b from-purple-500/30 to-transparent rounded-t-xl"></div>
                                 
@@ -166,18 +88,18 @@ const About = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 60 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.4, delay: 0.4 }}
+                            transition={{ duration: 1.5, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="relative w-full"
                         >
-                            <div className="shadow-cards relative w-full bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 overflow-hidden">
+                            <div className="relative w-full bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 overflow-hidden">
                                 {/* purple shadow at top of image */}
                                 <div className="absolute top-0 left-0 right-0 h-5 bg-gradient-to-b from-purple-500/30 to-transparent rounded-t-xl"></div>
                                 
                                 {/* Image covering full space and extending to section bottom */}
                                 <img
                                     src={SmatrbinCompetition}
-                                    alt="Dikr Playlist Interface"
+                                    alt="smartbinHacathon"
                                     className="w-full h-auto object-cover rounded-xl shadow-lg border-purple-200 border-2"
                                     loading="lazy"
                                 />
@@ -185,15 +107,12 @@ const About = () => {
                                 {/* White gradient overlay - clear top, opaque bottom */}
                                 
                                 {/* Additional gradient for smooth blending with section background */}
-                                <div className="absolute  left-0 right-0 h-10 bg-gradient-to-t from-purple-200 via-purple-300/80 to-transparent"></div>
+                                <div className="absolute left-0 right-0 h-10 bg-gradient-to-t from-purple-200 via-purple-300/80 to-transparent"></div>
                             </div>
                         </motion.div>
                         {/* Texte - Côté gauche */}
                         <motion.div
-                            initial={{ opacity: 0, x: -70 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 2 }}
-                            viewport={{ once: true }}
+                            
                             className="space-y-8"
                         >
                             {/* Header */}

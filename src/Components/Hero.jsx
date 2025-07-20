@@ -7,11 +7,12 @@ import About from "./About";
 import Stack from "./Stack";
 import Project from "./Project";
 import Logomarquee from "./Logomarquee";
+import Contact from "./Contact";
 
 
 const Hero = () => {
   return (
-    <div className='w-full min-h-screen relative overflow-x-hidden pointer-events-none'>
+    <div className='w-full min-h-screen relative overflow-x-hidden'>
       
       {/* Hero Section */}
       <motion.div className='w-full h-screen relative overflow-hidden'>
@@ -42,7 +43,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, translateX: -50 }}
           animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.6, delay: 1 }} 
+          transition={{ duration: 0.8, delay: 0.8 }} 
           className='absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-8 lg:pl-16 lg:pr-10 pt-20 sm:pt-24 lg:pt-0 z-20'>
           
           <div className='max-w-2xl ml-10 text-center lg:text-left'>
@@ -86,7 +87,7 @@ const Hero = () => {
       <Project/>
 
       
-      
+      <Contact/>
      
     </div>
   );

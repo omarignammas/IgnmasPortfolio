@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { HomeLandingPage ,portofolio, yourturn} from "../Assets/index";
 import Devider from "./Devider";
+import Logomarquee from "./Logomarquee";
 
 function FloatingDots() {
     const [dots, setDots] = useState([]);
@@ -344,6 +345,8 @@ const Project = () => {
           </div>
         </motion.div>
       </div>
+
+      <Logomarquee/>
     </section>
   );
 };
