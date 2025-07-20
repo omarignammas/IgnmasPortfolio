@@ -10,4 +10,7 @@ export {default as profile} from "./profile.jpeg";
 export {default as GitexAfrica} from "./GitexAfrica.png";
 export {default as SmatrbinCompetition} from "./SmatrbinCompetition.PNG";
 
+export {default as HomeLandingPage} from "./HomeLandingPage.png";
+export {default as portofolio} from "./portofolio.png";
 
+export {default as yourturn} from "./yourturn.png";

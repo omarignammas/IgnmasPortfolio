@@ -11,7 +11,7 @@ const About = () => {
         useEffect(() => {
           const generateDots = () => {
             const newDots = [];
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 25; i++) {
               newDots.push({
                 id: i,
                 size: Math.random() * 5 + 2,
@@ -83,8 +83,8 @@ const About = () => {
   
 
     return(
-        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 overflow-hidden'>
-            <FloatingDots></FloatingDots>
+        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 overflow-hidden pointer-events-none'>
+
             <div className='relative z-10 max-w-7xl mx-auto h-full flex flex-col'>
                 {/* Main Content - Layout côte à côte */}
                 <div className="flex-1 flex items-center">
@@ -100,8 +100,8 @@ const About = () => {
                         >
                             {/* Header */}
                             <div className="text-center lg:text-left">
-                                <h2 className='nean-effect text-6xl sm:text-7xl lg:text-8xl font-bold font-Poppins text-purple-500 mb-4'>
-                                    Me
+                                <h2 className='nean-effect text-5xl sm:text-5xl lg:text-6xl font-bold font-Poppins text-purple-500 mb-4'>
+                                   Software Enginner
                                 </h2>
                                 <p className='text-lg text-purple-500 ml-2 font-Poppins font-medium'>
                                     AI for Water Sustainability – GITEX AFRICA 2024"

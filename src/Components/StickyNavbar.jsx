@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {MobileNav, Nav} from "./index";
-import { NavLink } from "react-router-dom";
 import { github, Nabd,  Linkedin } from "../Assets";
  
 function StickyNavbar() {

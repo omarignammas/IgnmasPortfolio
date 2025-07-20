@@ -4,6 +4,9 @@ import { bgPurple, offmenu, profile } from "../Assets";
 import StickyNavbar from "./StickyNavbar";
 import TrueFocus from "./TrueFocus";
 import About from "./About";
+import Stack from "./Stack";
+import Project from "./Project";
+import Logomarquee from "./Logomarquee";
 
 
 const Hero = () => {
@@ -70,14 +73,19 @@ const Hero = () => {
           </div>
           
         </motion.div>
-
-       
-
       </motion.div>
 
       
 
-      <About></About>
+      <About/>
+
+
+      <Stack/>
+
+
+      <Project/>
+
+      
       
      
     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { AnimatePresence } from 'framer-motion';
 import { Route,Routes } from 'react-router-dom';
-import {Hero} from './Components/index';
+import {Header, Hero, StickyNavbar} from './Components/index';
 
 
 function App() {
