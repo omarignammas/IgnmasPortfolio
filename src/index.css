@@ -10,6 +10,14 @@
 @tailwind utilities;
 
 
+html, body {
+  background-color: #160424;   /* same as your section bg */
+}
+
+.will-change-transform {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
 
 .nean-effect{
 

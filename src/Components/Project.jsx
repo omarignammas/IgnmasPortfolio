@@ -182,7 +182,7 @@ const Project = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
 
   return (
-    <section className="min-h-screen bg-[#160424] py-20 px-6 pointer-events-none">
+    <section id="ProjectSection"  className="min-h-screen bg-[#160424] py-20 px-6 pointer-events-none">
       <FloatingDots />
       <Devider/>
       <div className="max-w-7xl mt-28 mx-auto pointer-events-none">

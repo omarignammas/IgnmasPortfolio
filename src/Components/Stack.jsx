@@ -136,7 +136,7 @@ const techStack = [
     const [hoveredCard, setHoveredCard] = useState(null);
   
     return (
-      <section className="min-h-screen bg-[#160424] py-20 px-6 pointer-events-none z-0">
+      <section id="StackSection" className="min-h-screen bg-[#160424] py-20 px-6 pointer-events-none z-0">
            <Devider/>
         <div className="max-w-7xl mx-auto pointer-events-none">
           {/* Header */}

@@ -84,13 +84,22 @@ const Footer = () => {
             high-quality solutions that empower businesses and individuals.
           </p>
           <div className="flex space-x-5 pt-2">
-            <a href="#" className="text-purple-500 hover:text-blue-400 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
+            <a href="https://github.com/omarignammas"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ pointerEvents: "auto" }}
+                className="text-purple-500 hover:text-purple-200 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
               <GitHubIcon size={28} />
             </a>
-            <a href="#" className="text-purple-500 hover:text-blue-400 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
+            <a href="#" className="text-purple-500 hover:text-purple-200 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
               <TwitterIcon size={28} />
             </a>
-            <a href="#" className="text-purple-500 hover:text-blue-400 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
+            <a href="https://www.linkedin.com/in/omar-ignammas-26b62b239/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ pointerEvents: "auto" }}
+            
+               className="text-purple-500 hover:text-purple-300 dark:text-purple-400 dark:hover:text-teal-400 transition-transform transform hover:scale-110">
               <LinkedInIcon size={28} />
             </a>
           </div>
@@ -100,10 +109,10 @@ const Footer = () => {
         <div className="space-y-4">
           <h3 className="text-xl font-bold nean-effectv2 font-Poppins text-purple-900 dark:text-purple-100">Quick Links</h3>
           <ul className="space-y-3">
-            <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Home</a></li>
-            <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">About Us</a></li>
-            <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Stacks</a></li>
-            <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Portfolio</a></li>
+            <li><a href="#HomeSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Home</a></li>
+            <li><a href="#AboutSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">About Us</a></li>
+            <li><a href="#StackSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Stacks</a></li>
+            <li><a href="#ProjectSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Portfolio</a></li>
             <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Blog</a></li>
           </ul>
         </div>

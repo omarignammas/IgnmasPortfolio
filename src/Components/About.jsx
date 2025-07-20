@@ -17,8 +17,8 @@ const About = () => {
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                         
                         {/* Texte - Côté gauche */}
-                        <motion.div
-                            className="space-y-8"
+                        <div
+                            className="space-y-8 will-change-transform"
                         >
                             {/* Header */}
                             <div className="text-center lg:text-left">
@@ -50,7 +50,7 @@ const About = () => {
                                     </button>
                                 </div>
                             </div>
-                        </motion.div>
+                        </div>
 
                         {/* Image - Côté droit */}
                         <motion.div
@@ -58,7 +58,7 @@ const About = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.5, delay: 0.5 }}
                             viewport={{ once: true }}
-                            className="relative w-full"
+                            className="relative w-full will-change-transform"
                         >
                             <div className="relative w-full bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 overflow-hidden">
                                 {/* purple shadow at top of image */}

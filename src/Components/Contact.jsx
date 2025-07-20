@@ -5,7 +5,7 @@ import {Footer, Logomarquee, NewsletterForm, NexusOrbSup} from "../Components/in
 
 const Contact = () => {
   return (
-    <footer id="FooterSection" className=" bg-[#160424] pointer-events-none  pt-10">
+    <footer id="ContactSection"  className=" bg-[#160424] pointer-events-none  pt-10">
       {/* Bloc principal avec l'image et la newsletter */}
       {/* Left Content */}
       <motion.div

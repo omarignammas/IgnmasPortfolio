@@ -12,7 +12,7 @@ import Contact from "./Contact";
 
 const Hero = () => {
   return (
-    <div className='w-full min-h-screen relative overflow-x-hidden'>
+    <div id="HomeSection"  className='w-full min-h-screen relative overflow-x-hidden'>
       
       {/* Hero Section */}
       <motion.div className='w-full h-screen relative overflow-hidden'>
@@ -44,7 +44,7 @@ const Hero = () => {
           initial={{ opacity: 0, translateX: -50 }}
           animate={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }} 
-          className='absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-8 lg:pl-16 lg:pr-10 pt-20 sm:pt-24 lg:pt-0 z-20'>
+          className='absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-8 lg:pl-16 lg:pr-10 pt-20 sm:pt-24 lg:pt-0 z-20 pointer-events-none'>
           
           <div className='max-w-2xl ml-10 text-center lg:text-left'>
             <TrueFocus 
@@ -67,7 +67,7 @@ const Hero = () => {
               </span>
             </p>
             
-            <button className='bg-gradient-to-r from-[#e49aff] to-[#a417d7] hover:shadow-purple-400 mt-2  text-white font-light font-Poppins px-6 py-3 sm:px-9 sm:py-2 rounded-full text-base sm:text-lg transition-all duration-200 transform hover:scale-105'>
+            <button className='bg-gradient-to-r from-[#e49aff] to-[#a417d7] hover:shadow-purple-600 mt-2 shadow-md text-white font-light font-Poppins px-6 py-3 sm:px-9 sm:py-2 rounded-full text-base sm:text-lg transition-all duration-200 transform hover:scale-105 pointer-events-auto'>
              Get in touch
             </button>
             
