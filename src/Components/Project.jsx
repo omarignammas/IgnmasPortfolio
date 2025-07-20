@@ -132,17 +132,17 @@ const projects = [
   {
     id: 1,
     name: 'Dikr App',
-    description: 'Une application mobile de dhikr avec compteur et rappels spirituels',
+    description: 'Une application web de dikr avec recitation, podcasts et Livres spirituels',
     image: HomeLandingPage,
     githubUrl: 'https://github.com/omarignammas/dikr-app',
     liveUrl: 'https://dikr-app-demo.vercel.app',
-    techStack: ['React', 'Firebase', 'JavaScript', 'TailwindCSS'],
+    techStack: ['React', 'Firebase', 'JavaScript', 'TailwindCSS' , 'ExpressJs','MongoDB'],
     category: 'Mobile App'
   },
   {
     id: 2,
     name: 'E-Reservation Platform',
-    description: 'Plateforme e-commerce complète avec gestion des commandes et paiements',
+    description: 'Plateforme e-commerce complète avec gestion des reservations',
     image: yourturn, // Remplacez par votre image
     githubUrl: 'https://github.com/omarignammas/ecommerce-platform',
     liveUrl: 'https://ecommerce-demo.vercel.app',
