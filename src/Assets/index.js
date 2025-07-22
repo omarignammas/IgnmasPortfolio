@@ -1,6 +1,7 @@
 
 
 export {default as bgPurple} from "./bgPurple.mp4";
+export {default as BgScreenComprissed} from "./BgScreenComprissed.mp4";
 export {default as bgPoster} from "./bgPoster.png";
 export {default as github} from "./github.png";
 export {default as Nabd} from "./Nabd.jpeg";
@@ -14,3 +15,13 @@ export {default as HomeLandingPage} from "./HomeLandingPage.png";
 export {default as portofolio} from "./portofolio.png";
 
 export {default as yourturn} from "./yourturn.png";
+export {default as PublicSpeaker} from "./PublicSpeaker.png";
+
+export {default as hospitalmanagement} from "./hospitalmanagement.png";
+
+export {default as ignitegym} from "./ignitegym.png";
+
+
+
+
+

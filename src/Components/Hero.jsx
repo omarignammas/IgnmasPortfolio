@@ -1,32 +1,36 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { bgPurple, offmenu, profile } from "../Assets";
+import { bgPoster, bgPurple, BgScreenComprissed, offmenu, profile } from "../Assets";
 import StickyNavbar from "./StickyNavbar";
 import TrueFocus from "./TrueFocus";
 import About from "./About";
 import Stack from "./Stack";
 import Project from "./Project";
-import Logomarquee from "./Logomarquee";
 import Contact from "./Contact";
+import { Suspense } from "react";
+
+
 
 
 const Hero = () => {
   return (
-    <div id="HomeSection"  className='w-full min-h-screen relative overflow-x-hidden'>
+    <div id="HomeSection"  className='w-full min-h-screen relative '>
       
       {/* Hero Section */}
-      <motion.div className='w-full h-screen relative overflow-hidden'>
+      <motion.div 
+      className='w-full h-screen relative overflow-hidden'>
 
-        {/* Background Video */}
-        <video 
-          className="absolute inset-0 w-full h-full object-cover z-0" 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
-          id="bgVideo"
-        >
-          <source src={bgPurple} type="video/mp4" />
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="none"
+        poster={bgPoster} // fallback image while video loads
+        id="bgVideo"
+      >
+          <source src={BgScreenComprissed} type="video/mp4" />
           <source src="your-video.webm" type="video/webm" />
           {/* Fallback image if video fails to load */}
           Your browser does not support the video tag.
@@ -41,12 +45,15 @@ const Hero = () => {
         
         {/* Main Content */}
         <motion.div
-          initial={{ opacity: 0, translateX: -50 }}
-          animate={{ opacity: 1, translateX: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }} 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration:1.5 }}
           className='absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-8 lg:pl-16 lg:pr-10 pt-20 sm:pt-24 lg:pt-0 z-20 pointer-events-none'>
-          
+        
+       
+  
           <div className='max-w-2xl ml-10 text-center lg:text-left'>
+          <Suspense fallback={<h1 className="text-4xl text-[#e49aff] font-bold">Locked In</h1>}>
             <TrueFocus 
               sentence="Locked In"
               manualMode={false}
@@ -56,6 +63,7 @@ const Hero = () => {
               pauseBetweenAnimations={1}
             />
             
+          </Suspense>
             <h2 className='text-4xl sm:text-4xl lg:text-4xl font-bold font-Poppins text-[#e49aff] mb-6 mt-4 leading-tight'>
             Beyond Dev Potentiel<br/>
             </h2>
@@ -75,19 +83,18 @@ const Hero = () => {
           
         </motion.div>
       </motion.div>
+        
+       <About/> 
 
+       <Stack/>
+
+       <Project/>
+
+
+       <Contact/>
       
 
-      <About/>
-
-
-      <Stack/>
-
-
-      <Project/>
-
       
-      <Contact/>
      
     </div>
   );

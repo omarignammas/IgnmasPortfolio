@@ -9,15 +9,39 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Dans votre CSS global */
+body {
+  background-color: #160424;
+}
 
-html, body {
-  background-color: #160424;   /* same as your section bg */
+#root {
+  background-color: #160424;
+  min-height: 100vh;
 }
 
 .will-change-transform {
   will-change: transform, opacity;
   transform: translateZ(0);
 }
+
+
+.nean-effectv1{
+
+  color: rgb(245, 191, 255);
+  transition:
+    filter 0.3s ease,
+    color 0.3s ease;
+  text-shadow:
+    0 0 7px #f8abff,
+    0 0 8px #ff8ffd,
+    0 0 5px #ff8afb,
+    0 0 5px #d48bff,   /* lighter purple */
+    0 0 02px #e17eff,   /* main purple */
+    0 0 22px #a84eff,   /* deeper purple */
+    0 0 18px #e17eff,
+    0 0 20px #7a2fff; 
+}
+
 
 .nean-effect{
 

@@ -146,7 +146,7 @@ const techStack = [
             transition={{ duration: 0.6 }}
             className="text-center mt-32 mb-16"
           >
-            <p className="nean-effect text-5xl sm:text-6xl font-Poppins text-purple-500 font-medium">
+            <p className="nean-effectv1 text-5xl sm:text-6xl font-Poppins text-purple-500 font-medium">
               My Technical Stack
             </p>
             <h4 className="text-2xl sm:text-3xl mt-5 font-semibold font-Poppins text-purple-400">

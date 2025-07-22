@@ -26,7 +26,7 @@ const NewsletterForm = () => {
 
   return (
     <div className="max-h-[30vhd]  p-20 rounded-lg shadow-md text-center relative bg-white/20 backdrop-blur-md overflow-hidden border border-white/30">
-    <h2 className="text-5xl mt-4 nean-effectv2 font-Poppins text-[#bb47c7] mb-6">Let's Connect</h2>
+    <h2 className="text-5xl mt-4 nean-effectv1 font-Poppins text-[#bb47c7] mb-6">Let's Connect</h2>
     <p className="mb-6 text-purple-400 font-semibold font-poppins">Have an idea or collab in mind? Let’s talk!.</p>
     <form ref={form} onSubmit={sendEmail}>
     <input

@@ -9,7 +9,7 @@ const About = () => {
   
 
     return(
-        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 overflow-hidden'>
+        <section id="AboutSection" className='relative min-h-[94vh] py-20 bg-[#160424] px-4 sm:px-8 lg:px-16 '>
 
             <div className='relative z-10 max-w-7xl mx-auto h-full flex flex-col'>
                 {/* Main Content - Layout côte à côte */}
@@ -17,7 +17,12 @@ const About = () => {
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                         
                         {/* Texte - Côté gauche */}
-                        <div
+                        <motion.div
+                           initial={{ opacity: 0, y: 40 }}
+                           whileInView={{ opacity: 1, y: 0 }}
+                           viewport={{ once: true, amount: 0.3 }}
+                           transition={{ duration: 0.8, ease: "easeOut" }}
+                            
                             className="space-y-8 will-change-transform"
                         >
                             {/* Header */}
@@ -39,9 +44,9 @@ const About = () => {
                                 </h4>
                                 
                                 <p className='text-lg text-purple-700 font-Inter leading-relaxed max-w-2xl'>
-                                We proudly secured 2nd place at the AI for Water Sustainability Challenge during GITEX AFRICA. Our project Ghayt, <span className="nean-effect">an AI-driven mobile app</span>, tackles water scarcity by optimizing consumption and promoting sustainable practices across Africa.
+                                We proudly secured 2nd place at the AI for Water Sustainability Challenge during GITEX AFRICA. Our project Ghayt, <span className="nean-effectv1">an AI-driven mobile app</span>, tackles water scarcity by optimizing consumption and promoting sustainable practices across Africa.
 
-                                 <span className="nean-effect">This achievement reflects our commitment to leveraging technology for social impact</span>, presenting our solution on a global stage among leading innovators.   </p>
+                                 <span className="nean-effectv1">This achievement reflects our commitment to leveraging technology for social impact</span>, presenting our solution on a global stage among leading innovators.   </p>
 
                                 {/* Call to action */}
                                 <div className="pt-4">
@@ -50,13 +55,13 @@ const About = () => {
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Image - Côté droit */}
                         <motion.div
                             initial={{ opacity: 0, y: 60 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.5, delay: 0.5 }}
+                            transition={{ duration: 1, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="relative w-full will-change-transform"
                         >
@@ -70,6 +75,7 @@ const About = () => {
                                     alt="GitexAfricaImage"
                                     className="w-full h-auto object-cover rounded-xl shadow-lg border-purple-200 border-2"
                                     loading="lazy"
+                                     decoding="async"
                                 />
                                 
                                 {/* White gradient overlay - clear top, opaque bottom */}
@@ -88,7 +94,7 @@ const About = () => {
                         <motion.div
                             initial={{ opacity: 0, y: 60 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1.5, delay: 0.5 }}
+                            transition={{ duration: 1, delay: 0.5 }}
                             viewport={{ once: true }}
                             className="relative w-full"
                         >
@@ -112,7 +118,10 @@ const About = () => {
                         </motion.div>
                         {/* Texte - Côté gauche */}
                         <motion.div
-                            
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             className="space-y-8"
                         >
                             {/* Header */}
@@ -132,7 +141,7 @@ const About = () => {
                                 </h4>
                                 
                                 <p className='text-lg text-purple-700 font-Inter leading-relaxed max-w-2xl'>
-                                Our team proudly represented ENSA Kenitra and secured <span className="nean-effect">first place at the prestigious AI2SD (Artificial Intelligence and Sustainable Development) Hackathon held in Tangier.</span>This event brought together top innovators to develop impactful
+                                Our team proudly represented ENSA Kenitra and secured <span className="nean-effectv1">first place at the prestigious AI2SD (Artificial Intelligence and Sustainable Development) Hackathon held in Tangier.</span>This event brought together top innovators to develop impactful
                                  AI-driven solutions for sustainability.
                                  Goal: Reduce human error, improve recycling efficiency, and protect the environment. </p>
 
@@ -152,4 +161,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default React.memo(About);

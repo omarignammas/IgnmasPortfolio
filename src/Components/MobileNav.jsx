@@ -1,7 +1,9 @@
+
+import React from "react";
 import { github, Linkedin } from "../Assets";
 import { useState } from "react";
 
-export default function MobileNav() {
+function MobileNav() {
   const [Toggle, setToggle] = useState(false);
 
   return (
@@ -91,3 +93,5 @@ export default function MobileNav() {
     </div>
   );
 }
+
+export default MobileNav = React.memo(MobileNav);

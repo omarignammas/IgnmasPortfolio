@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { instagram, profile } from '../Assets';
-import { useState } from 'react';
+
 
 export default function Nav() {
   const [isExpanded, setIsExpanded] = useState(false);
+
+
 
   return (
     <div 

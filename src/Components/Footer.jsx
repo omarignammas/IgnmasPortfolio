@@ -107,7 +107,7 @@ const Footer = () => {
 
         {}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold nean-effectv2 font-Poppins text-purple-900 dark:text-purple-100">Quick Links</h3>
+          <h3 className="text-xl font-bold nean-effectv1 font-Poppins text-purple-900 dark:text-purple-100">Quick Links</h3>
           <ul className="space-y-3">
             <li><a href="#HomeSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Home</a></li>
             <li><a href="#AboutSection" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">About Us</a></li>
@@ -119,7 +119,7 @@ const Footer = () => {
 
         {}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold nean-effectv2 font-Poppins text-purple-900 dark:text-purple-100">Resources</h3>
+          <h3 className="text-xl font-bold nean-effectv1 font-Poppins text-purple-900 dark:text-purple-100">Resources</h3>
           <ul className="space-y-3">
             <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">Support</a></li>
             <li><a href="#" className="text-purple-400 dark:text-purple-300 hover:text-blue-400 dark:hover:text-teal-400 transition-colors duration-300">FAQs</a></li>
@@ -131,7 +131,7 @@ const Footer = () => {
 
         {}
         <div className="space-y-4">
-          <h3 className="text-xl font-bold nean-effectv2 font-Poppins text-purple-900 dark:text-purple-100">Contact Us</h3>
+          <h3 className="text-xl font-bold nean-effectv1 font-Poppins text-purple-900 dark:text-purple-100">Contact Us</h3>
           <p className="text-purple-400 dark:text-purple-300">123 Agdal, Rabat City, 98765</p>
           <p className="text-purple-400 dark:text-purple-300">Email: omar.ignammas2003@gmail.com</p>
           <p className="text-purple-400 dark:text-purple-300">Phone: +212 648 364 140</p>

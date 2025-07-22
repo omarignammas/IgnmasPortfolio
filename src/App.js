@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { AnimatePresence } from 'framer-motion';
 import { Route,Routes } from 'react-router-dom';
-import {Header, Hero, StickyNavbar} from './Components/index';
+import { Hero} from './Components/index';
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route path="/*" element={<Hero />} />
 
         </Routes>
+        
 
        
     </AnimatePresence>
