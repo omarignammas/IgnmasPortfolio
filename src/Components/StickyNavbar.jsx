@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import {MobileNav, Nav} from "./index";
 import { github, Nabd,  Linkedin } from "../Assets";
+import { NavLink } from "react-router-dom";
 
 
 const navbarAnimation = {
@@ -76,6 +77,14 @@ function StickyNavbar() {
               />
           </a>
 
+        <NavLink to={'/Blog'}>
+          <div className='flex hover:border-white flex-1 font-normal backdrop-blur-xl opacity-85 rounded-full shadow-sm p-3 pt-2 pb-2 gap-2 text-md lg:gap-10 bg-white/20 border border-white/3'>
+        
+                  <p className="font-Poppins font-semibold hover:text-white nean-effect">• Blog</p>
+
+        
+          </div>
+        </NavLink>
 
           </div>
         </motion.div>

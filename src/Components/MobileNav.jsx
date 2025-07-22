@@ -81,6 +81,13 @@ function MobileNav() {
           >
             Projects
           </a>
+
+          <a 
+            href="#Projects" 
+            className="text-purple-600 hover:text-purple-800 hover:bg-purple-200 p-2 rounded-lg transition-all duration-200 ease-in-out"
+          >
+            Blog
+          </a>
          
           <a 
             href="#contact" 

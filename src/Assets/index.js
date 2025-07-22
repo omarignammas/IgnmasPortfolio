@@ -1,6 +1,4 @@
 
-
-export {default as bgPurple} from "./bgPurple.mp4";
 export {default as BgScreenComprissed} from "./BgScreenComprissed.mp4";
 export {default as bgPoster} from "./bgPoster.png";
 export {default as github} from "./github.png";

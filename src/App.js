@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { AnimatePresence } from 'framer-motion';
 import { Route,Routes } from 'react-router-dom';
-import { Hero} from './Components/index';
+import { Blog, Hero} from './Components/index';
 
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <Routes>
 
           <Route path="/*" element={<Hero />} />
+          <Route path="/Blog" element={<Blog />} />
 
         </Routes>
         

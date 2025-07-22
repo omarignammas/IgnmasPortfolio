@@ -11,7 +11,7 @@ function FloatingDots() {
     useEffect(() => {
       const generateDots = () => {
         const newDots = [];
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 22; i++) {
           newDots.push({
             id: i,
             size: Math.random() * 5 + 2,
@@ -388,10 +388,13 @@ const Project = () => {
             </span>
             <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse" />
           </div>
+
+          <Logomarquee/>
+          
         </motion.div>
       </div>
 
-      <Logomarquee/>
+      
     </section>
   );
 };

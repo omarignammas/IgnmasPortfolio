@@ -38,25 +38,25 @@ export default function Nav() {
 
       {/* Links */}
       <HashLink smooth to="/#HomeSection">
-        <p className="nav_link font-Poppins duration-200 hover:text-purple-600 cursor-pointer">
+        <p className="nav_link font-Poppins duration-200 hover:text-white cursor-pointer">
           Home
         </p>
       </HashLink>
 
       <HashLink smooth to="/#StackSection">
-        <p className="nav_link font-Poppins duration-200 hover:text-purple-600 cursor-pointer">
+        <p className="nav_link font-Poppins duration-200 hover:text-white cursor-pointer">
           Stacks
         </p>
       </HashLink>
 
       <HashLink smooth to="/#ProjectSection">
-        <p className="nav_link font-Poppins duration-200 hover:text-purple-600 cursor-pointer">
+        <p className="nav_link font-Poppins duration-200 hover:text-white cursor-pointer">
           Projects
         </p>
       </HashLink>
 
       <HashLink smooth to="/#ContactSection">
-        <p className="nav_link font-Poppins duration-200 hover:text-purple-600 cursor-pointer">
+        <p className="nav_link font-Poppins duration-200 hover:text-white cursor-pointer">
           Connect
         </p>
       </HashLink>
